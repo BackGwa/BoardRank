@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>보드게임 랭크</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -18,18 +18,30 @@
         <div class="ffP ranklist">
             <!-- 랭크 -->
             <ol>
+                <?php
+                    $DB = mysqli_connect("localhost", "root", "");
+
+                    mysqli_select_db($DB, "ranker");
+
+                    $query = ""
+                    $resultA = mysqli_query($DB, $query);
+
+                    $query = ""
+                    $resultB = mysqli_query($DB, $query);
+
+                    while($name = mysqli_fetch_array($resultA)){
+                        $score = mysqli_fetch_array($resultB)
+                    }
+                ?>    
+
+
                 <div class="rank">
                     <div clsss="rankname">
-                        <li>2201 강찬영</li>
+                        <li>1111 홍길동</li>
                     </div>
                     <div clsss="rankscore">1,000점</div>
-                </div>
-                <div class="rank">
-                    <div clsss="rankname">
-                        <li>2201 강찬영</li>
-                    </div>
-                    <div clsss="rankscore">500점</div>
-                </div>
+                </div><hr>
+
             </ol>
         </div>
     </div>
