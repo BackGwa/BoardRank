@@ -18,29 +18,26 @@
         <div class="ffP ranklist">
             <!-- 랭크 -->
             <ol>
+
                 <?php
                     $DB = mysqli_connect("localhost", "root", "");
 
-                    mysqli_select_db($DB, "ranker");
+                    mysqli_select_db($DB, "rank");
 
-                    $query = ""
-                    $resultA = mysqli_query($DB, $query);
+                    $query = "select * from board order by score desc";
+                    $result = mysqli_query($DB, $query);
 
-                    $query = ""
-                    $resultB = mysqli_query($DB, $query);
-
-                    while($name = mysqli_fetch_array($resultA)){
-                        $score = mysqli_fetch_array($resultB)
+                    while($row = mysqli_fetch_array($result)){
+                        echo '<div class="rank">';
+                        echo '<div clsss="rankname">';
+                        echo '<li>'.$row['uid'].' '.$row['name'].'</li></div>';
+                        echo '<div clsss="rankscore">'.$row['score'].'점</div>';
+                        echo '</div><hr>';
                     }
+
+                    mysqli_close($DB);
+
                 ?>    
-
-
-                <div class="rank">
-                    <div clsss="rankname">
-                        <li>1111 홍길동</li>
-                    </div>
-                    <div clsss="rankscore">1,000점</div>
-                </div><hr>
 
             </ol>
         </div>
