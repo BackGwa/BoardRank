@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM PICK!</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
+</head>
+
+<body>
+    <audio src="./Click.mp3" id="clicksfx"></audio>
+    <audio src="./Hover.mp3" id="hoversfx"></audio>
+
+    <div class="display">
+        <div class="listed">
+            <div class="gamelist">
+
+                <div class="gameshow2 g1" onmouseover="phver();">
+                    <div class="gssp">다빈치</div>
+                    <div class="halri-human">
+                        <div class="huma" onmouseover="phver();" onclick="randchoice(games[6]);">
+                            <div class="humx">3명</div>
+                        </div>
+                        <div class="humb" onmouseover="phver();" onclick="randchoice(games[7]);">
+                            <div class="humx">4명</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gameshow2 g2" onmouseover="phver();">
+                    <div class="gssp">루미큐브</div>
+                    <div class="halri-human">
+                        <div class="huma" onmouseover="phver();" onclick="randchoice(games[8]);">
+                            <div class="humx">3명</div>
+                        </div>
+                        <div class="humb" onmouseover="phver();" onclick="randchoice(games[9]);">
+                            <div class="humx">4명</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gameshow2 g3" onmouseover="phver();">
+                    <div class="gssp">할리갈리</div>
+                    <div class="halri-human">
+                        <div class="huma" onmouseover="phver();" onclick="randchoice(games[2]);">
+                            <div class="humx">3명</div>
+                        </div>
+                        <div class="humb" onmouseover="phver();" onclick="randchoice(games[3]);">
+                            <div class="humx">4명</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gameshow2 g4" onmouseover="phver();">
+                    <div class="gssp">뱅</div>
+                    <div class="halri-human">
+                        <div class="huma" onmouseover="phver();" onclick="randchoice(games[4]);">
+                            <div class="humx">6명</div>
+                        </div>
+                        <div class="humb" onmouseover="phver();" onclick="randchoice(games[5]);">
+                            <div class="humx">7명</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gamelist">
+
+                <div class="gameshow g5" onclick="randchoice(games[0]);" onmouseover="phver();">
+                    체스
+                </div>
+
+                <div class="gameshow g6" onclick="randchoice(games[1]);" onmouseover="phver();">
+                    오목
+                </div>
+
+                <div class="gameshow g7" onclick="randchoice(games[10]);" onmouseover="phver();">
+                    달무티
+                </div>
+
+                <div class="gameshow g8 light" onmouseover="phver();">
+                    초기화
+                    <div class="halri-human">
+                        <div class="huma" onmouseover="phver();" onclick="retry();">
+                            <div class="humx">다시</div>
+                        </div>
+                        <div class="humb" onmouseover="phver();" onclick="reset();">
+                            <div class="humx">리셋</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="result">
+            <div class="game" id="gamelist">
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

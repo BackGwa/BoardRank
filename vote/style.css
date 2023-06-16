@@ -1,0 +1,356 @@
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable.css");
+
+@font-face {
+    font-family: 'PyeongChangPeaceB';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Bold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Bold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Bold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Bold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Bold.ttf') format("truetype");
+    font-display: swap;
+} 
+
+body {
+    margin: 0;
+    font-family: "Pretendard Variable";
+    overflow: hidden;
+}
+
+
+.light {
+    font-family: "PyeongChangPeaceB";
+    color: #0000005d;
+}
+
+.display {
+    font-family: "PyeongChangPeaceB", 'sans-serif';
+    text-overflow: hidden;
+    white-space: nowrap;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    width: 100%;
+    height: 100vh;
+    background: rgb(250, 250, 250);
+    background: linear-gradient(0deg, rgba(250, 250, 250, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.listed {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gamelist {
+    width: 100%;
+    display: flex;
+}
+
+.gameshow {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+
+    width: 150px;
+    height: 40px;
+
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+
+    font-size: 38px;
+    font-weight: 700;
+
+    background: #f5f7f8;
+    padding: 36px 36px;
+
+    border: 1px solid #e3e5e8;
+    border-radius: 15px;
+
+    filter: drop-shadow(0px 0px 24px #e3e5e8);
+
+    transition: 0.225s;
+}
+
+.gameshow2 {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+
+    width: 150px;
+    height: 40px;
+
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+
+    font-weight: 700;
+
+    background: #f5f7f8;
+    padding: 36px 36px;
+
+    border: 1px solid #e3e5e8;
+    border-radius: 15px;
+
+    filter: drop-shadow(0px 0px 24px #e3e5e8);
+
+    transition: 0.18s;
+}
+
+.gameshow:hover {
+    transform: translate(-12.5px, -12.5px);
+    padding: 52px 52px;
+    font-size: 42px;
+    background: #fafbfb;
+
+    border: 1px solid #dadbdc;
+    filter: drop-shadow(0px 0px 56px #b1b3b5ce);
+}
+
+.gameshow2:hover {
+    transform: translate(-12.5px, -12.5px);
+    padding: 52px 52px;
+
+    background: #fafbfb;
+
+    border: 1px solid #dadbdc;
+    filter: drop-shadow(0px 0px 56px #b1b3b5ce);
+}
+
+.gameshow2 .gssp {
+    font-size: 38px;
+    transition: 0.2s;
+}
+
+.gameshow2:hover .gssp {
+    font-size: 32px;
+    margin-bottom: 76px;
+}
+
+
+.g1 {
+    left: -450px;
+    z-index: 1;
+}
+
+.g1:hover {
+    z-index: 2;
+}
+
+.g2 {
+    left: -225px;
+    z-index: 1;
+}
+
+.g2:hover {
+    z-index: 2;
+}
+
+.g3 {
+    left: 0px;
+    z-index: 1;
+}
+
+.g3:hover {
+    z-index: 2;
+}
+
+.g4 {
+    left: 225px;
+    z-index: 1;
+}
+
+.g4:hover {
+    z-index: 2;
+}
+
+.g5 {
+    left: -450px;
+    top: 115px;
+    z-index: 1;
+}
+
+.g5:hover {
+    z-index: 2;
+}
+
+.g6 {
+    left: -225px;
+    top: 115px;
+    z-index: 1;
+}
+
+.g6:hover {
+    z-index: 2;
+}
+
+.g7 {
+    left: 0px;
+    top: 115px;
+    z-index: 1;
+}
+
+.g7:hover {
+    z-index: 2;
+}
+
+.g8 {
+    left: 225px;
+    top: 115px;
+    z-index: 1;
+}
+
+.g8:hover {
+    z-index: 2;
+}
+
+.result {
+    background: #f5f7f87e;
+    margin-top: 100px;
+    width: 875px;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+    padding: 12px;
+
+    border: 1px solid #e3e5e8;
+    border-radius: 15px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+.gameitem {
+    background: #fafbfb;
+    height: 72px;
+    padding: 12px;
+    border: 1px solid #e3e5e8;
+    border-radius: 15px;
+    overflow: hidden;
+    text-overflow: hidden;
+    margin-bottom: 12px;
+
+    filter: drop-shadow(0px 0px 4px #e3e5e8);
+
+    transition: 0.3s;
+}
+
+.gameitem:hover {
+    filter: drop-shadow(0px 0px 64px #8d8d8d33);
+}
+
+.gametitle {
+    position: absolute;
+    font-size: 100px;
+    opacity: 0.075;
+    margin-top: -29px;
+}
+
+.gamehuman {
+    font-family: "Pretendard Variable";
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 28px;
+    margin-right: 6px;
+    float: right;
+    display: flex;
+    vertical-align: middle;
+}
+
+.halri-human {
+    opacity: 0.0;
+
+    width: 100%;
+    height: 95%;
+    
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.18s ease-in;
+    z-index: 3;
+}
+
+.halri-human:hover {
+    height: 100%;
+    opacity: 1.0;
+}
+
+.huma, .humb {
+    background: #f5f7f8f6;
+
+    margin-top: 64px;
+    width: 90%;
+    height: 64px;
+
+    border: 1px solid #e3e5e8;
+    transition: 0.25s;
+
+    filter: drop-shadow(0px 0px 0px #e3e5e800);
+}
+
+.huma {
+    margin-left: 12px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.huma:hover {
+    width: 100%;
+    filter: drop-shadow(0px 0px 12px #c9cbce);
+    z-index: 4;
+}
+
+.humb {
+    margin-right: 12px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.humb:hover {
+    width: 100%;
+    filter: drop-shadow(0px 0px 12px #c9cbce);
+    z-index: 4;
+}
+
+.humx {
+    font-family: "Pretendard Variable";
+    font-weight: 400;
+
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    flex-direction: row;
+    align-content: center;
+
+    font-size: 24px;
+    margin-top: 16px;
+
+    opacity: 0.25;
+    
+    transition: 0.2s;
+}
+
+.halri-human:hover .humx {
+    opacity: 1.0;
+    font-weight: 600;
+    margin-top: 8px;
+    font-size: 38px;
+}

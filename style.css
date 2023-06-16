@@ -13,12 +13,12 @@
 }
 
 .title {
-    font-size: 4rem;
+    font-size: 3.3rem;
     font-weight: 900;
     padding: 5px;
 
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 32px;
 
     white-space: nowrap;
 }
@@ -45,7 +45,8 @@
     overflow-x: hidden;
     overflow-y: scroll;
 
-    background: #0000000A;
+    background: #F6F6F6;
+    filter: drop-shadow(0px 0px 24px #00000030);
     padding: 0.5rem;
     border-radius: 15px;
 
@@ -75,8 +76,36 @@ a {
 }
 
 .textctr {
-    margin-top: 18px;
+    margin-top: 24px;
     font-size: 1.1rem;
     display: flex;
     justify-content: center;
+}
+
+.flexgrid {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.submit {
+    margin: 15px 10px 10px 10px;
+    padding: 10px 20px;
+    border: solid #00000010 1px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 4px #00000010);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.fontresize {
+    font-size: 1.15rem;
+    margin-top: 8px;
+    margin-left: 12px;
 }
